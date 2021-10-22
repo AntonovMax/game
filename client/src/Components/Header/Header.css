@@ -1,0 +1,26 @@
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  height: 13vh;
+  justify-content: center;
+  background-color: rgb(99, 135, 168);
+  padding-top: 8px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  display: inline;
+}
+
+.nav-link {
+  margin: 0px 40px;
+  font-size: 5vh;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 50;
+  color: rgb(224, 228, 195);
+  letter-spacing: 0.1vw;
+}
