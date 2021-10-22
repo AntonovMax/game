@@ -99,7 +99,7 @@ app.post("/login", async (req, res) => {
 //     topic: el.dataValues.topic,
 //   }));
 app.get("/cardList", async (req, res) => {
-<
+
   console.log("Зешёл на */cardList");
   const arrToSend = await Topics.findAll({ include: { model: Questions } });
   console.log("После FindALl");
