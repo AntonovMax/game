@@ -5,6 +5,7 @@ import { store } from '../../redux/store'
 import Header from '../Header/Header';
 import SignUp from '../SignUp/SignUp';
 import SignIn from '../SignIn/SignIn';
+import Game from '../Game/Game';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <Route path='/signe_up' component={SignUp} />
         <Route path='/signe_in' component={SignIn} />
+        <Route path='/game' component={Game} />
       </Router>
     </Provider>
   );
