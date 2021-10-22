@@ -99,10 +99,10 @@ app.post("/login", async (req, res) => {
 //     topic: el.dataValues.topic,
 //   }));
 app.get("/cardList", async (req, res) => {
-  console.log('Привет');
+<
+  console.log("Зешёл на */cardList");
   const arrToSend = await Topics.findAll({ include: { model: Questions } });
-
-  console.log('Еще раз Привет');
+  console.log("После FindALl");
   res.json(arrToSend);
 });
 

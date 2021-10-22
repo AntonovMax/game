@@ -62,6 +62,7 @@ const Questions = require('./question')(sequelize, Sequelize.DataTypes);
 // Mycards.hasMany(Basket, { foreignKey: 'cardId' });
 // Usercards.hasMany(Basket, { foreignKey: 'userId' });
 // Basket.belongsTo(Usercards, { foreignKey: 'userId' });
-
+Questions.belongsTo(Topics);
+Topics.hasMany(Questions)
 // module.exports = { Usercards, Mycards, Basket };
 module.exports = { Users, Topics, Questions }
