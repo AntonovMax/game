@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { store } from '../../redux/store'
 import Header from '../Header/Header';
 import SignUp from '../SignUp/SignUp';
+import SignIn from '../SignIn/SignIn';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Header />
         <Route path='/signe_up' component={SignUp} />
+        <Route path='/signe_in' component={SignIn} />
       </Router>
     </Provider>
   );
