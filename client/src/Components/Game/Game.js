@@ -8,7 +8,7 @@ function Game() {
   const gameTable = useSelector(state => state.gameReducer.game); // возможно данные тут
 
   useEffect(() => {
-    fetch("http://localhost:4000//cardList")
+    fetch("http://localhost:4000/cardList")
       .then(response => response.json())
       .then(data => dispatch({ type: "INIT_GAME", payload: gameTable }))
   }, []);
