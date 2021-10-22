@@ -16,6 +16,7 @@ function App() {
         <Route path='/signe_up' component={SignUp} />
         <Route path='/signe_in' component={SignIn} />
         <Route path='/game' component={Game} />
+        <Route path='/log_in' component={SignIn} />
       </Router>
     </Provider>
   );
