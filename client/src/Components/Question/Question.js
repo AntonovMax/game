@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 function Question({ question }) {
+
   return (
-    <td style={{ cursor: 'pointer' }} >200</td>
+    <td key={question.id} style={{ cursor: 'pointer' }} id={question.id}>200</td>
   );
 }
 

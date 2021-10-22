@@ -9,7 +9,7 @@ function SignUp(props) {
     event.preventDefault()
 
   
-    fetch('localhost:4000/registration', {
+    fetch('http://localhost:4000/registration', {
       method: 'post',
       headers: {
         'Content-Type' : 'application/json'
@@ -19,7 +19,7 @@ function SignUp(props) {
         password: event.target.password.value
       })
     }).then(response => { // здесь прописать условие если пользователь есть
-      
+      console.log('привет');
     })
   }
 
@@ -28,7 +28,7 @@ function SignUp(props) {
     <div className='block_container'>
       <form onSubmit={handlerSubmit}>
         <div className="mb-3">
-          <input type="text"   className="form-control" id="nameInput" name='name' aria-describedby="emailHelp" placeholder='Enter your name' />
+          <input type="text"   className="form-control" id="nameInput" name='name' aria-describedby="helpName" placeholder='Enter your name' />
           <div id="emailHelp" className ="form-text">Your name must be uniq</div>
         </div>
         <div className="mb-3">
