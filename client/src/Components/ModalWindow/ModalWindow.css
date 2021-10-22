@@ -1,0 +1,14 @@
+.modal_container {
+  position: relative;
+  top: 100px;
+  left: 35%;
+  width: 450px;
+  height: 350px;
+  padding: 20px;
+  background-color: azure;
+  border-radius: 20px;
+}
+
+.user_text {
+  word-wrap: break-word;
+}
