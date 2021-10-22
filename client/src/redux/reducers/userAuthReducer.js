@@ -1,5 +1,8 @@
 const defaultState = {
-  user: {}
+  user: {
+  score: 0,
+  isLogined: false,
+  }
 }
 
 export const userAuthReducer = (state = defaultState, action) => {
