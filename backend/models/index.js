@@ -37,20 +37,20 @@
 // module.exports = db;
 
 
-// 'use strict';
-// const path = require('path');
-// const { Sequelize } = require('sequelize');
-// const env = 'development';
-// const config = require(path.join(__dirname, '../config/config.json'))[env];
+'use strict';
+const path = require('path');
+const { Sequelize } = require('sequelize');
+const env = 'development';
+const config = require(path.join(__dirname, '../config/config.json'))[env];
 // Получаем данные для подключения
-// const sequelize = new Sequelize(
-//   config.database,
-//   config.username,
-//   config.password,
-//   {
-//     dialect: config.dialect,
-//   },
-// );
+const sequelize = new Sequelize(
+  config.database,
+  config.username,
+  config.password,
+  {
+    dialect: config.dialect,
+  },
+);
 // Инициализируем модели
 const Users = require('./user')(sequelize, Sequelize.DataTypes);
 const Topics = require('./topic')(sequelize, Sequelize.DataTypes);
