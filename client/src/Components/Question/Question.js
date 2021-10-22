@@ -2,7 +2,7 @@ import React from 'react';
 
 function Question({ question }) {
   return (
-    <td>200</td>
+    <td style={{ cursor: 'pointer' }} >200</td>
   );
 }
 

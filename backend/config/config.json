@@ -1,7 +1,11 @@
 {
   "development": {
-    "use_env_variable": "DATABASE_URL",
+    "username": "admin",
+    "password": 123,
+    "database": "Game",
+    "host": "127.0.0.1",
     "dialect": "postgres"
+    
   },
   "test": {
     "username": "root",
