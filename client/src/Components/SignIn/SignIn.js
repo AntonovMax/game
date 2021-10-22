@@ -27,7 +27,7 @@ function SignIn() {
           <div id="emailHelp" className ="form-text">Your name must be uniq</div>
         </div>
         <div class="mb-3">
-          <input type="password" className="form-control" id="exampleInputPassword1" placeholder='Enter your password'/>
+          <input type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder='Enter your password'/>
         </div>
         <button type="submit" className="btn btn-primary own_button">Submit</button>
       </form>

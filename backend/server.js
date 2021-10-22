@@ -68,24 +68,24 @@ app.post("/registration", async (req, res) => {
 
 app.post("/login", async (req, res) => {
   const { userName, password } = req.body;
- 
+
   const loginFromDB = await Users.findOne({
-    
     where: {
       userName,
     },
     raw: true,
   });
   console.log(loginFromDB);
-  if (userName){
+  if (userName) {
     const match = await bcrypt.compare(password, loginFromDB.password);
-  if (match) {
-    req.session.Authenticated = true;
-    req.session.user = userName;
-    return res.json({
-      message: true,
-    });
-  }}
+    if (match) {
+      req.session.Authenticated = true;
+      req.session.user = userName;
+      return res.json({
+        message: true,
+      });
+    }
+  }
   return res.json({ message: false });
 });
 
@@ -98,9 +98,9 @@ app.post("/login", async (req, res) => {
 //     price: el.dataValues.price,
 //     topic: el.dataValues.topic,
 //   }));
-  app.get("/cardList", async (req, res) => {
-    const arrToSend = await Topics.findAll({include: {model:Questions} });
-  res.json(arrToSend);
+app.get("/cardList", async (req, res) => {
+  const arrToSend = await Topics.findAll({ include: { model: Questions } });
+  res.json(arrTocSend);
 });
 
 app.listen(PORT, () => {
