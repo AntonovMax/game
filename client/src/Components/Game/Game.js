@@ -23,7 +23,6 @@ function Game() {
   useEffect(() => {
     fetch("http://localhost:4000/cardList")
       .then(response => response.json())
-      .then(data => console.log(data))
       .then(data => dispatch({ type: "INIT_GAME", payload: data }))
   }, []);
 

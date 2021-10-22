@@ -7,12 +7,6 @@ function Theme({ name, questions }) {
       <tr>
         <td key={name}>{name}</td>
         {questions.map(question => <Question key={question.id} question={question}/>)}
-        {/* <td key={name}>{name}</td>
-        <td key={questions[0].id}>200</td>
-        <td key={questions[0].id}>200</td>
-        <td key={questions[0].id}>200</td>
-        <td key={questions[0].id}>200</td>
-        <td key={questions[0].id}>200</td> */}
       </tr>
   );
 }

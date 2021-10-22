@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 function Question({ question }) {
 
   return (
-    <td key={question.id} style={{ cursor: 'pointer' }} id={question.id}>200</td>
+    <td key={question.id} style={{ cursor: 'pointer' }} id={question.id}>{question.price}</td>
   );
 }
 
